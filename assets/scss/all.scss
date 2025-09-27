@@ -1,0 +1,28 @@
+// ===============================
+// 📌 Bootstrap Core Setup
+// 先載入 Bootstrap 必要的函式與變數覆蓋
+// ===============================
+@import "../../node_modules/bootstrap/scss/functions"; // Bootstrap 函式庫 (e.g. color, map 操作)
+@import "./utils/variables";                           // 自訂變數 (顏色 / 字體 / spacing / radius 覆蓋)
+@import "../../node_modules/bootstrap/scss/bootstrap"; // Bootstrap 核心 (包含 grid、utilities、元件等)
+
+
+// ===============================
+// ✍️ Custom Global Styles
+// 專案共用的自訂字體 / Utilities
+// ===============================
+@import "./utils/fonts";       // 字體來源 + 字體工具類別
+@import "./utils/utilities";   // 自訂 Utilities (text-xxl, round-s...)
+
+// ===============================
+// 📂 Layout Components
+// 網站共用的頁首 / 頁尾樣式
+// ===============================
+@import "./layout/header";     
+@import "./layout/footer";    
+
+// ===============================
+// 📄 Page Specific Styles
+// 各頁面專用樣式
+// ===============================
+@import "./pages/index";

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <%- include('./layout/float-btn'); -%>
+      <!-- 橫幅 -->
+      <section>
+        <!-- Swiper -->
+        <div class="swiper headerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/assets/images/header/header-01.png" alt="">
+                <div class="font-handwriting position-absolute title-setting">最溫馨的私人包場空間</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/assets/images/header/header-02.png" alt="">
+                <div class="font-handwriting position-absolute title-setting">
+                  獨一無二<br>
+                  粉紅聖誕抓周派對開跑
+                  <p class="fs-sm mt-3 NotoSansTC">這個聖誕節，讓小寶寶穿上小聖誕裝，來場充滿驚喜...</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="position-relative">
+                <img src="/assets/images/header/header-03.png" alt="">
+                <div class="font-handwriting position-absolute title-setting"> 重磅登場 <br> 室內露營風收涎派對
+                  <p class="fs-sm mt-3 NotoSansTC">不用出門也能感受自然感，全新露營文青場地，<br>
+                    融合可愛裝扮、質感帳篷，打造最chill的收涎...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none d-md-flex"></div>
+          <div class="swiper-button-prev d-none d-md-flex"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- 產品資訊 -->
+      <section class="py-7 py-md-12">
+        <!-- swiper -->
+        <div class="swiper indexSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide news-img-01 round-l position-relative overflow-hidden">
+              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+              <div class="position-absolute p-3 p-md-5 link-white z-2">
+                <div class="h7 mb-1">玫瑰金夢幻性別派對</div>
+                <div class="h7 mb-2">最美時刻 !</div>
+                <time class="fs-sm me-1" datetime="2025/03/08">2025 / 03 / 08</time><span class="fs-sm">發布</span>
+              </div>
+              <button type="submit" class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
+            </div>
+            <div class="swiper-slide news-img-02 round-l position-relative overflow-hidden">
+              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+              <div class="position-absolute p-3 p-md-5 link-white z-2">
+                <div class="h7 mb-1">2025 / 09 - 12 月抓周、性別派對</div>
+                <div class="h7 mb-2">包場預約中 !</div>
+                <time class="fs-sm me-1" datetime="2025/08/03">2025 / 08 / 03</time><span class="fs-sm">發布</span>
+              </div>
+              <button type="submit" class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
+            </div>            
+            <div class="swiper-slide news-img-03 round-l position-relative overflow-hidden">
+              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+              <div class="position-absolute p-3 p-md-5 link-white z-2">
+                <div class="h7 mb-1">重磅登場</div>
+                <div class="h7 mb-2">室內露營風收涎派對</div>
+                <time class="fs-sm me-1" datetime="2025/07/22">2025 / 07 / 22</time><span class="fs-sm">發布</span>
+              </div>
+              <button type="submit" class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
+            </div>   
+            <div class="swiper-slide news-img-04 round-l position-relative overflow-hidden">
+              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+              <div class="position-absolute p-3 p-md-5 link-white z-2">
+                <div class="h7 mb-1">酷洛米來報到 !</div>
+                <div class="h7 mb-2">主題派對抓周登場</div>
+                <time class="fs-sm me-1" datetime="2025/05/05">2025 / 05 / 05</time><span class="fs-sm">發布</span>
+              </div>
+              <button type="submit" class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
+            </div>     
+            <div class="swiper-slide news-img-05 round-l position-relative overflow-hidden">
+              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+              <div class="position-absolute p-3 p-md-5 link-white z-2">
+                <div class="h7 mb-1">我們在找你</div>
+                <div class="h7 mb-2">招募長期夥伴 !</div>
+                <time class="fs-sm me-1" datetime="2025/07/23">2025 / 07 / 23</time><span class="fs-sm">發布</span>
+              </div>
+              <button type="submit" class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
+            </div>                          
+          </div>
+        </div>
+      </section>
+
+      <!-- 產品優缺 -->
+       <section class="container py-7 py-md-12">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 gap-lg-0 row mb-6 mb-lg-8">
+          <div class="col-lg-6">
+            <h6 class="text-primary-800 h3-md mb-2 mb-md-6 text-center text-lg-start">擔心活動變成一場壓力</h6>
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-start align-items-center fs-sm fs-md-xl">
+              <p>第一次準備活動，完全沒頭緒，</p>
+              <p>還要照顧親朋好友與寶寶。</p>
+            </div>
+          </div>
+          <img src="/assets/images/index/concerns1.png" alt="擔心活動變成一場壓力插圖" loading="lazy" decoding="async" class="col-lg-6">
+        </div>
+        <div class="d-flex flex-column flex-md-row-reverse justify-content-between align-items-center gap-4 gap-lg-0 row mb-6 mb-lg-8">
+          <div class="col-lg-6">
+            <h6 class="text-primary-800 h3-md mb-2 mb-md-6 text-center text-lg-end">擔心現場有不認識的人</h6>
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center fs-sm fs-md-xl">
+              <p>許多陌生臉孔，還要特別提高警覺，</p>
+              <p>容易被影響</p>
+            </div>
+          </div>
+          <img src="/assets/images/index/concerns2.png" alt="擔心現場有不認識的人" loading="lazy" decoding="async" class="col-lg-6">
+        </div>   
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 gap-lg-0 row mb-6 mb-lg-8">
+          <div class="col-lg-6">
+            <h6 class="text-primary-800 h3-md mb-2 mb-md-6 text-center text-lg-start">擔心時間不夠</h6>
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-start align-items-center fs-sm fs-md-xl">
+              <p>時間很短，還要完成儀式，</p>
+              <p>等親友都到達</p>
+            </div>
+          </div>
+          <img src="/assets/images/index/concerns3.png" alt="擔心時間不夠" loading="lazy" decoding="async" class="col-lg-6">
+        </div>               
+       </section>
+
+       <!-- 選擇你要的 -->
+       <section class="py-7 py-md-12 container">
+        <div class="position-relative text-center mb-5 mb-md-8">
+          <h6 class="h2-md py-md-6">你可以選擇，你想要的</h6>
+          <img src="/assets/images/index/choose.png" class="title-bg-img position-absolute z-n1 top-0 start-50" alt="">
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-5 mb-md-8">
+            <img src="/assets/images/index/choose01.png" class="round-l w-100 mb-4 choose-img" alt="場地寬敞好聚會">
+            <div class="h7 h5-md mb-2 mb-md-4">場地寬敞好聚會</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">戶外庭院 + 室內空間，最多可容納 25 人，親友聚會舒適不擁擠。</p>
+          </div>
+          <div class="col-12 col-md-4 mb-5 mb-md-8">
+            <img src="/assets/images/index/choose02.png" class="round-l w-100 mb-4 choose-img" alt="專業團隊全程支援">
+            <div class="h7 h5-md mb-2 mb-md-4">專業團隊全程支援</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">專業主持搭配默契團隊，活動流程順暢，氣氛溫馨不冷場。</p>
+          </div>  
+          <div class="col-12 col-md-4 mb-5 mb-md-8">
+            <img src="/assets/images/index/choose03.png" class="round-l w-100 mb-4 choose-img" alt="獨立包場最安心">
+            <div class="h7 h5-md mb-2 mb-md-4">獨立包場最安心</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">預定時間及包場服務，有效隔離非活動民眾，安全又可靠。</p>
+          </div>  
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <img src="/assets/images/index/choose04.png" class="round-l w-100 mb-4 choose-img" alt="客製選配最靈活">
+            <div class="h7 h5-md mb-2 mb-md-4">客製選配最靈活</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">攝影、餐點、主持人皆可自由選擇，打造專屬你的儀式派對。</p>
+          </div>  
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <img src="/assets/images/index/choose05.png" class="round-l w-100 mb-4 choose-img" alt="溫馨老屋有溫度">
+            <div class="h7 h5-md mb-2 mb-md-4">溫馨老屋有溫度</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">老屋風格注入文化底蘊，記錄成長的每個珍貴時刻。</p>
+          </div>    
+          <div class="col-12 col-md-4">
+            <img src="/assets/images/index/choose06.png" class="round-l w-100 mb-4 choose-img" alt="衛生把關零死角">
+            <div class="h7 h5-md mb-2 mb-md-4">衛生把關零死角</div>
+            <p class="fs-sm fs-md-xl mb-3 mb-md-6">場地定期消毒清潔，餐具一次性使用，守護寶寶與賓客的健康安全。</p>
+          </div>                                                  
+        </div>
+
+       </section>
+
+       <!-- 立即預約 -->
+        <section class="container py-7 py-md-12">
+          
+        </section>
+
+
+      <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+// ===============================
+// ✍️ Typography Utilities
+// 自訂文字大小，對應 _variables.scss 中的 $text-* 變數
+// 用於更精確的字體規範 (e.g. .text-xl = 20px)
+// ===============================
+.fs-xxl { font-size: $text-xxl !important; } // 28px
+.fs-xl  { font-size: $text-xl !important; }  // 20px
+.fs-lg  { font-size: $text-lg !important; }  // 18px
+.fs-md  { font-size: $text-md !important; }  // 16px
+.fs-sm  { font-size: $text-sm !important; }  // 14px
+.fs-xs  { font-size: $text-xs !important; }  // 12px
+
+
+// ===============================
+// ⭕ Radius Utilities
+// 自訂圓角，對應 _variables.scss 中的 $border-radius-* 變數
+// 讓你可以用更語意化的 class (.round-s / .round-full)
+// ===============================
+.round-s    { border-radius: $border-radius !important; }       // 4px
+.round-m    { border-radius: $border-radius-sm !important; }    // 8px
+.round-l    { border-radius: $border-radius-lg !important; }    // 12px
+.round-xl   { border-radius: $border-radius-xl !important; }    // 16px
+.round-full { border-radius: $border-radius-pill !important; }  // 完全圓形
+
+
+.h7{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+// 若你已全域關 RFS：$enable-rfs: false; 會讓 font-size mixin 輸出固定 px/rem
+$heading-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+
+@each $k, $size in $heading-sizes {
+  .h#{$k}-md {
+    @include media-breakpoint-up(md) {
+      @include font-size($size); // ✅ 不用 extend，直接套字級
+    }
+  }
+}
