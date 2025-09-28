@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <title>index</title>
 </head>
 
@@ -233,7 +234,7 @@
           <h6 class="h2-md py-md-6">現場活動影片</h6>
           <img src="/assets/images/index/choose.png" class="title-bg-img position-absolute z-n1 top-0 start-50" alt="">
         </div> 
-        <video controls class="w-100 round-l">
+        <video controls class="w-100 round-l" controls poster="/assets/images/index/vedio.png">
            <source src="/assets/video/20250921_1202.mp4" type="video/mp4" />
         </video>
       </section>     
@@ -242,39 +243,66 @@
       <section class="py-7 py-md-12 container">
         <div class="swiper feedbackSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/assets/images/index/comment-01.png" alt="">
+            <div class="swiper-slide d-flex flex-column flex-md-row justify-content-center align-items-start gap-4">
+                <img src="/assets/images/index/comment-01.png" alt="">
+                <div>
+                  <div class="h7 h6-md text-primary-700 mb-1 mb-md-3">非常喜歡這次的活動 !</div>
+                  <div class="d-flex text-black align-items-center mb-1 mb-md-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>      
+                    <i class="bi bi-star-fill me-2"></i>
+                    <span class="fs-md fw-medium fs-md-xl">5.0</span>                                     
+                  </div>
+                  <p class="feedback-text mb-5">在這裡舉辦女兒的抓周活動，場地溫馨、很有氛圍 <br> 抓周氣氛很好很會帶動，攝影師也很棒很有耐心，超級大推薦</p>
+                  <div class="d-flex align-items-center mt-1">
+                    <img src="/assets/images/index/customer-icon-01.png" class="icon-24x24 me-2" alt="林淑芬">
+                    <p class="fs-xs me-auto">林淑芬</p>
+                    <time datetime="2025 / 07 / 13  11:33" class="fs-xs">2025 / 07 / 13  11:33</time>
+                  </div>
+                </div>
             </div>
-            <div class="swiper-slide news-img-02 round-l position-relative overflow-hidden">
-              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-              <div class="position-absolute p-3 p-md-5 link-white z-2">
-                <div class="h7 mb-1">2025 / 09 - 12 月抓周、性別派對</div>
-                <div class="h7 mb-2">包場預約中 !</div>
-                <time class="fs-sm me-1" datetime="2025/08/03">2025 / 08 / 03</time><span class="fs-sm">發布</span>
-              </div>
-              <button type="submit"
-                class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
-            </div>
-            <div class="swiper-slide news-img-03 round-l position-relative overflow-hidden">
-              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-              <div class="position-absolute p-3 p-md-5 link-white z-2">
-                <div class="h7 mb-1">重磅登場</div>
-                <div class="h7 mb-2">室內露營風收涎派對</div>
-                <time class="fs-sm me-1" datetime="2025/07/22">2025 / 07 / 22</time><span class="fs-sm">發布</span>
-              </div>
-              <button type="submit"
-                class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
-            </div>
-            <div class="swiper-slide news-img-03 round-l position-relative overflow-hidden">
-              <div class="news-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-              <div class="position-absolute p-3 p-md-5 link-white z-2">
-                <div class="h7 mb-1">重磅登場</div>
-                <div class="h7 mb-2">室內露營風收涎派對</div>
-                <time class="fs-sm me-1" datetime="2025/07/22">2025 / 07 / 22</time><span class="fs-sm">發布</span>
-              </div>
-              <button type="submit"
-                class="btn-sm-outline-white position-absolute end-0 bottom-0 me-3 me-md-5 mb-3 mb-md-5 z-2">查看更多</button>
-            </div>            
+            <div class="swiper-slide d-flex flex-column flex-md-row justify-content-center align-items-start gap-4">
+                <img src="/assets/images/index/comment-02.png" alt="">
+                <div>
+                  <p class="h7 h6-md text-primary-700 mb-1 mb-md-3 feedback-title">溫馨又難忘的抓周派對體驗 !</p>
+                  <div class="d-flex text-black align-items-center mb-1 mb-md-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>      
+                    <i class="bi bi-star-fill me-2"></i>
+                    <span class="fs-md fw-medium fs-md-xl">5.0</span>                                     
+                  </div>
+                  <p class="feedback-text mb-5">整個活動的流程安排非常細緻貼心，從迎賓、主持到拍照，每個環節都讓人感受到專業與用心。場地布置不僅夢幻，還處處設計了適合拍照的小巧思，完全符合爸媽的期待。主持人風格自然溫暖，讓現場氣氛充滿笑聲與祝福；攝影師更是耐心捕捉寶寶的每個可愛瞬間，照片效果令人驚豔。寶寶全程玩得開心，全家人也在這特別的一天留下珍貴回憶，真的是一次非常愉快又值得推薦的體驗！</p>
+                  <div class="d-flex align-items-center mt-1">
+                    <img src="/assets/images/index/customer-icon-02.png" class="icon-24x24 me-2" alt="林淑芬">
+                    <p class="fs-xs me-auto feedback-user-name">小熊媽咪暖心日常1988</p>
+                    <time datetime="2025 / 07 / 22  14:25" class="fs-xs">2025 / 07 / 22  14:25</time>
+                  </div>
+                </div>
+            </div> 
+            <div class="swiper-slide d-flex flex-column flex-md-row justify-content-center align-items-start gap-4">
+                <img src="/assets/images/index/comment-03.png" alt="">
+                <div>
+                  <p class="h7 h6-md text-primary-700 mb-1 mb-md-3 feedback-title">滿滿愛與祝福的收涎派對，寶寶笑容最美</p>
+                  <div class="d-flex text-black align-items-center mb-1 mb-md-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>      
+                    <i class="bi bi-star-fill me-2"></i>
+                    <span class="fs-md fw-medium fs-md-xl">5.0</span>                                     
+                  </div>
+                  <p class="feedback-text mb-5">這是我們第一次幫寶寶舉辦收涎，從布置到流程都超用心。當寶寶戴上收涎餅乾時，看到長輩一一送上祝福，真的很感動。場地溫馨舒適，攝影師也幫我們捕捉下好多可愛的瞬間，讓這份傳統習俗變得既有意義又充滿回憶。全家人都覺得好幸福！</p>
+                  <div class="d-flex align-items-center mt-1">
+                    <img src="/assets/images/index/customer-icon-03.png" class="icon-24x24 me-2" alt="林淑芬">
+                    <p class="fs-xs me-auto feedback-user-name">Andy Leung</p>
+                    <time datetime="2025 / 08 / 03  14:03" class="fs-xs">2025 / 08 / 03  14:03</time>
+                  </div>
+                </div>
+            </div>                      
           </div>
         </div>
 
