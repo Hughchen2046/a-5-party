@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-    <script type="module" crossorigin src="/a-5-party/assets/main-BbzwHx-8.js"></script>
-    <link rel="stylesheet" crossorigin href="/a-5-party/assets/main-DyI7fwmp.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>index</title>
+  <script type="module" crossorigin src="/a-5-party/assets/main-BbzwHx-8.js"></script>
+  <link rel="stylesheet" crossorigin href="/a-5-party/assets/main-DyI7fwmp.css">
+</head>
+
+<body>
     <nav class="navbar navbar-hd navbar-expand-md fixed-top">
   <div class="container-fluid align-items-center">
     <div class="d-flex justify-content-between align-items-center w-100">
@@ -73,9 +76,50 @@
       </div>
   </div>
 </nav>
-    <h1>我是contact</h1>
-    <div class="w-25 h2 text-primary-100 bg-gray-700 border-5 border-solid border-primary-700">hello</div>
-    <div class="w-25 h2 text-success bg-danger border-3 border-dashed border-gray-300">bootstrap</div>    
+    <div id="contact-card" class="collapse position-fixed bottom-0 end-0 me-8 z-3 mb-152px">
+  <div class="card round-l overflow-hidden border-0">
+    <div class="card-header px-5 py-8 link-white bg-primary-700">
+      <h4 class="mb-3">你好 ~ 需要幫忙嗎 ?</h4>
+      <p class="fs-xl">加入官方 LINE 安排專員為您解惑</p>
+    </div>
+    <div class="card-body position-relative">
+      <div class="qrframe position-absolute text-center">
+        <img src="/a-5-party/assets/qrcode-BTDp-ffU.png" alt="巷弄派對QRcode">
+        <p>掃描後即可開啟 LINE 進行對話</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id="contact-btn"
+  class="d-none d-md-block contact-icon collapsed position-fixed end-0 bottom-0 me-8 mb-8 z-3"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#contact-card"
+  aria-controls="contact-card"     
+  aria-expanded="false"
+  aria-label="聯絡我們">
+</button>
+    <section>
+        <div class="gender-header text-center align-content-center">
+            <h1 class="text-white fs-title font-handwriting">性別派對</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-9 position-relative bg-primary-50 genderIntroHead">
+                <h1>由來</h1>
+                <p class="">性別派對起源於北美父母想把「新生命的驚喜」與親友一起分享：把產檢上的一行字，變成現場同步揭曉的溫暖時刻。從蛋糕夾色、氣球彩粉，到簡單的小道具，形式不斷演變；重點始終是把期待與祝福聚在一起，讓家人朋友共同見證那一刻的笑與淚。
+                </p>
+                <p class="">引進台灣後，性別派對與抓周、收涎並列成為「迎接與陪伴」的儀式線。場地從餐廳延伸到主題空間（如老屋、室內露營），更符合拍照與家庭聚會需求；許多家庭也會搭配直播或相簿分享，讓外地親友一起參與，留下屬於我們的台式溫度。
+                </p>
+                <img src="/a-5-party/assets/genderIntro-01-CpC8r5ZM.png" alt="" class="position-absolute genderIntroHead-Img round-xl">
+    
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer bg-primary-800">
     <div class="container p-20px p-md-5">
 <div class="d-flex justify-content-center justify-content-md-between">
@@ -105,5 +149,6 @@
     </div>
 </footer>
 
-  </body>
-</html>
+</body>
+
+</html>        
