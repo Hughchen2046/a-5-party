@@ -12,7 +12,12 @@
 .fs-md  { font-size: $text-md !important; }  // 16px
 .fs-sm  { font-size: $text-sm !important; }  // 14px
 .fs-xs  { font-size: $text-xs !important; }  // 12px
-
+.fs-title{
+  font-size: 60px;
+  @media(min-width: 800px){
+    font-size: 100px;
+  }
+}
 
 // ===============================
 // ⭕ Radius Utilities

@@ -1,0 +1,66 @@
+.party-header, .gender-header{
+    background-position: center center;
+    background-size: cover;
+    height: 220px;
+    @media (min-width:960px) {
+        height: 350px;
+    }
+}
+.party-header{
+    background-image: url(/assets/images/partyIndex/loof.png);
+}
+.gender-header{
+    background-image: url(/assets/images/partyIndex/gender-05.png);
+    opacity: 0.7;
+}
+.partyIndexImgMask{
+    width: 100%;
+    overflow: hidden;
+}
+.partyIndexImgMask, .partyIndexImg{
+    height: 350px;
+    object-fit: cover;
+    object-position: center center;
+    transition: all 0.7s ease-in-out;
+    @media (min-width:960px) {
+        height: 550px;
+    }    
+}
+.partyIndexImg:hover{
+    transform: scale(1.15);
+
+}
+.genderStyle-ImgMask{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease;
+    }
+    .genderStyle-Img2{
+        opacity: 0;
+    }
+    &:hover .genderStyle-Img2{
+        opacity: 1;
+    }
+    &:hover .genderStyle-Img1{
+        opacity: 0;
+    }
+}
+.genderIntroHead{
+    // background-color: ;
+    padding-left: 110px;
+    padding-right: 30vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+.genderIntroHead-Img{
+    top: 50%;
+    left: 68%;
+    width: 45vw;
+    translate: 0 -50%;
+}
